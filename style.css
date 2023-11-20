@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+
+
+.continar {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+@media (max-width: 767px) {
+    .continar {
+        display: block;
+    }
+}
+
+
+.continar .row {
+    width: 100%;
+}
+
+.continar .row:first-child {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    height: 20%;
+}
+
+@media (max-width: 767px) {
+    .continar .row:first-child {
+        width: 100%;
+    }
+}
+
+.continar .row:first-child p:first-child {
+    color: var(--Grayish-Blue);
+    font-size: 25px;
+}
+
+.continar .row:first-child p:last-child {
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+}
+
+.continar .row:first-child h1 {
+    font-size: 25px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 10px;
+}
+
+
+.continar .row:last-child {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .continar .row:last-child {
+        flex-direction: column;
+    }
+}
+
+.continar .row:last-child>div {
+    width: calc(95% /3);
+}
+
+@media (max-width: 767px) {
+    .continar .row:last-child>div {
+        width: 100%;
+    }
+}
+
+.continar .row:last-child .box {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0px 5px 15px #0000003b;
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+    border-top: 3px solid red;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .continar .row:last-child .box {}
+}
+
+.continar .row:last-child .left .box:first-child {
+    border-color: var(--Cyan);
+}
+
+.continar .row:last-child .centar .box:first-child {
+    border-color: var(--Red);
+}
+
+.continar .row:last-child .centar .box:last-child {
+    border-color: var(--Orange);
+}
+
+.continar .row:last-child .right .box:first-child {
+    border-color: var(--Blue);
+}
+
+.continar .row:last-child .box h3 {
+    color: var(--Very-Dark-Blue);
+}
+
+.continar .row:last-child .box p {
+    color: var(--Grayish-Blue);
+}
+
+.continar .row:last-child .box svg {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
